@@ -1,0 +1,166 @@
+/* import fonts from googleapis */
+@import url('https://fonts.googleapis.com/css?family=Rubik|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}/*inicia css de caja de login*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    width: 100%;
+    
+    
+    background-position: center;
+    background-size: cover;
+}
+
+
+h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    margin: 40px  0;
+    width: 310px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 10%;
+    left: 1px;
+    transform: translateY(1%);
+    color: #fff;
+    font-size: 0.8em;
+    pointer-events: none;
+    transition: 1s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -8px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+
+/*inicia relog*/
+body{
+    
+    background: url('../assets/Night_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+
+:root{
+    --primary-gradient : linear-gradient(to bottom, #ffffff, #adadaa);
+    --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%);
+}
+
+
+
+/* Navigation */
+
+.navbar-nav .nav-link{
+    
+    padding: .4rem 2rem;
+    margin: 0;
+    text-align: right;
+}
+
+h4 {
+    
+    font-size: 5rem;
+    margin: 0 .4rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: unset;
+    
+  }
+ 
+  
